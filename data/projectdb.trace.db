@@ -1,0 +1,12 @@
+2025-06-04 11:05:39.946243-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "IMAGE_URL CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEBUPDxAPEBAPEhMQ... (8959)"
+Value too long for column "IMAGE_URL CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEBUPDxAPEBAPEhMQ... (8959)"; SQL statement:
+insert into projects (created_at,description,image_url,is_guest_project,name,project_url,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-06-04 11:06:13.264722-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "IMAGE_URL CHARACTER VARYING(255)": "'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA9lBMVEX//... (6506)"
+Value too long for column "IMAGE_URL CHARACTER VARYING(255)": "'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA9lBMVEX//... (6506)"; SQL statement:
+insert into projects (created_at,description,image_url,is_guest_project,name,project_url,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-06-04 11:06:47.075008-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "IMAGE_URL CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUUEhMWFhUWGRoa... (18059)"
+Value too long for column "IMAGE_URL CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUUEhMWFhUWGRoa... (18059)"; SQL statement:
+insert into projects (created_at,description,image_url,is_guest_project,name,project_url,id) values (?,?,?,?,?,?,default) [22001-232]
