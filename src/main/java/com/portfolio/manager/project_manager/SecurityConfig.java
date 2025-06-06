@@ -60,7 +60,7 @@ public class SecurityConfig {
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(java.util.Arrays.asList("http://localhost:5173","https://gildcode.github.io/gestor-proyectos-front/"));
+        configuration.setAllowedOrigins(java.util.Arrays.asList("http://localhost:5173","https://gildcode.github.io"));
         configuration.setAllowedMethods(java.util.Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(java.util.Arrays.asList("Authorization", "Content-Type"));
         configuration.setAllowCredentials(true);
