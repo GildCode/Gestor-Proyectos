@@ -17,7 +17,7 @@ public class SchedulerConfig {
 
     // Ejecuta este método cada hora (en milisegundos)
     // Puedes ajustar el tiempo (ej. cada 24 horas para menos frecuencia: 86400000)
-    @Scheduled(fixedRate = 3600000) // Cada hora
+    //@Scheduled(fixedRate = 3600000) // Cada hora
     public void cleanExpiredGuestProjects() {
         projectService.deleteExpiredGuestProjects();
     }
