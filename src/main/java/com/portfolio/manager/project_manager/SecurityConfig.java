@@ -60,10 +60,15 @@ public class SecurityConfig {
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(java.util.Arrays.asList("http://localhost:5173","https://gildcode.github.io"));
+        configuration.setAllowedOrigins(java.util.Arrays.asList(
+                "http://localhost:5173",
+                "https://gildcode.github.io"
+        ));
         configuration.setAllowedMethods(java.util.Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        configuration.setAllowedHeaders(java.util.Arrays.asList("Authorization", "Content-Type"));
+        configuration.setAllowedHeaders(java.util.Arrays.asList("*")); // Permitir todos los headers
         configuration.setAllowCredentials(true);
+        configuration.setExposedHeaders(java.util.Arrays.asList("Authorization")); // Si necesitas que el cliente lea esta cabecera
+
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
