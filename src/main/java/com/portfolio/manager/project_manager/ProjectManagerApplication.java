@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProjectManagerApplication {
 
 	public static void main(String[] args) {
+		System.out.println("corriendo");
 		SpringApplication.run(ProjectManagerApplication.class, args);
+
 	}
 
 }
