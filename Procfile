@@ -1,0 +1,1 @@
+web: java -jar target/project-manager-0.0.1-SNAPSHOT.jar
